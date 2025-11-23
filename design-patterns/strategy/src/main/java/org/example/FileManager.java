@@ -4,9 +4,7 @@ package org.example;
  * Context class that uses a Strategy to perform file saving operations.
  * This class delegates the actual saving logic to the strategy object,
  * allowing different algorithms to be used interchangeably.
- * 
- * @author fabricioguidine
- * @version 1.0
+ * * @version 1.0
  */
 public class FileManager {
     

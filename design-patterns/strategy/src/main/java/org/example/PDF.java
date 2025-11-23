@@ -4,9 +4,7 @@ package org.example;
  * Concrete strategy for saving files in PDF format.
  * This class implements the FileFormat interface to provide PDF-specific
  * file saving functionality.
- * 
- * @author fabricioguidine
- * @version 1.0
+ * * @version 1.0
  */
 public class PDF implements FileFormat {
     

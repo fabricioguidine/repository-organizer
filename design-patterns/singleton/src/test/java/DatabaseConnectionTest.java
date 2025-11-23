@@ -7,9 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
  * Test suite for the Singleton pattern implementation.
  * Tests verify that only one instance exists and that it behaves correctly
  * across multiple calls to getInstance().
- * 
- * @author fabricioguidine
- * @version 1.0
+ * * @version 1.0
  */
 @DisplayName("Singleton Pattern Tests")
 class DatabaseConnectionTest {

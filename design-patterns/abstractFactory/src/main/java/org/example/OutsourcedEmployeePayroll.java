@@ -3,9 +3,7 @@ package org.example;
 /**
  * Concrete implementation of Payroll for outsourced employees.
  * This class provides payroll information specific to outsourced employees.
- * 
- * @author fabricioguidine
- * @version 1.0
+ * * @version 1.0
  */
 public class OutsourcedEmployeePayroll implements Payroll {
     

@@ -3,9 +3,7 @@ package org.example;
 /**
  * Concrete implementation of Report for outsourced employees.
  * This class provides report information specific to outsourced employees.
- * 
- * @author fabricioguidine
- * @version 1.0
+ * * @version 1.0
  */
 public class OutsourcedEmployeeReport implements Report {
     

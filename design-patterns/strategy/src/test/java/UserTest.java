@@ -13,9 +13,7 @@ import static org.junit.jupiter.api.Assertions.*;
  * Test suite for the Strategy pattern implementation.
  * Tests verify that different file saving strategies work correctly
  * and can be used interchangeably.
- * 
- * @author fabricioguidine
- * @version 1.0
+ * * @version 1.0
  */
 @DisplayName("Strategy Pattern Tests")
 class UserTest {

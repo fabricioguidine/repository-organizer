@@ -10,9 +10,7 @@ import static org.junit.jupiter.api.Assertions.*;
  * Test suite for the Abstract Factory pattern implementation.
  * Tests verify that the factory correctly creates families of related objects
  * for different employee types (internal and outsourced).
- * 
- * @author fabricioguidine
- * @version 1.0
+ * * @version 1.0
  */
 @DisplayName("Abstract Factory Pattern Tests")
 class EmployeeTest {

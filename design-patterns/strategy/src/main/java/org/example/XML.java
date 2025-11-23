@@ -4,9 +4,7 @@ package org.example;
  * Concrete strategy for saving files in XML format.
  * This class implements the FileFormat interface to provide XML-specific
  * file saving functionality.
- * 
- * @author fabricioguidine
- * @version 1.0
+ * * @version 1.0
  */
 public class XML implements FileFormat {
     

@@ -9,9 +9,7 @@ package org.example;
  * <p>This implementation uses eager initialization, where the instance is created
  * when the class is loaded. For thread-safe lazy initialization, consider using
  * double-checked locking or the Initialization-on-demand holder idiom.
- * 
- * @author fabricioguidine
- * @version 1.0
+ * * @version 1.0
  */
 public class DatabaseConnection {
     

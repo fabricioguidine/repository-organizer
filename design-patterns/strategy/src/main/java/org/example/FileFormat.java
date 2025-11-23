@@ -5,9 +5,7 @@ package org.example;
  * This interface defines the contract for different file format saving strategies.
  * The Strategy pattern allows selecting algorithms at runtime, making the system
  * more flexible and extensible.
- * 
- * @author fabricioguidine
- * @version 1.0
+ * * @version 1.0
  */
 public interface FileFormat {
     

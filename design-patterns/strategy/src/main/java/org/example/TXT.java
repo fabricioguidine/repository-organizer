@@ -4,9 +4,7 @@ package org.example;
  * Concrete strategy for saving files in TXT format.
  * This class implements the FileFormat interface to provide TXT-specific
  * file saving functionality.
- * 
- * @author fabricioguidine
- * @version 1.0
+ * * @version 1.0
  */
 public class TXT implements FileFormat {
     

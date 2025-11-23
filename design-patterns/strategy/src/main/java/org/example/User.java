@@ -8,9 +8,7 @@ package org.example;
  * <p>The Strategy pattern defines a family of algorithms, encapsulates each one,
  * and makes them interchangeable. This allows the algorithm to vary independently
  * from clients that use it.
- * 
- * @author fabricioguidine
- * @version 1.0
+ * * @version 1.0
  */
 public class User {
     

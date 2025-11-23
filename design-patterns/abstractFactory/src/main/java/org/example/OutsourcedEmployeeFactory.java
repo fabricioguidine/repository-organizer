@@ -4,9 +4,7 @@ package org.example;
  * Concrete factory implementation for creating objects related to outsourced employees.
  * This factory creates a family of products (Payroll and Report) specifically
  * designed for outsourced employees.
- * 
- * @author fabricioguidine
- * @version 1.0
+ * * @version 1.0
  */
 public class OutsourcedEmployeeFactory implements AbstractFactory {
     

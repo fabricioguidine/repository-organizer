@@ -164,7 +164,7 @@ mvn test
 
 ```bash
 cd design-patterns/abstractFactory
-mvn test -Dtest=FuncionarioTest
+mvn test -Dtest=EmployeeTest
 ```
 
 ## 📚 Pattern Categories
@@ -212,22 +212,22 @@ These patterns are concerned with algorithms and the assignment of responsibilit
 ### Abstract Factory Example
 
 ```java
-FabricaAbstrata fabrica = new FabricaAbstrataFuncionarioInterno();
-Funcionario funcionario = new Funcionario(fabrica);
-String holerite = funcionario.emitirHolerite();
+AbstractFactory factory = new InternalEmployeeFactory();
+Employee employee = new Employee(factory);
+String payroll = employee.generatePayroll();
 ```
 
 ### Singleton Example
 
 ```java
-ConexaoBancoDados conexao = ConexaoBancoDados.getInstance();
+DatabaseConnection connection = DatabaseConnection.getInstance();
 ```
 
 ### Strategy Example
 
 ```java
-Usuario usuario = new Usuario();
-String resultado = usuario.salvarPDF("documento");
+User user = new User();
+String result = user.savePDF("document");
 ```
 
 ## 🤝 Contributing
@@ -257,11 +257,17 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Built with Java and Maven
 - Tested with JUnit 5
 
+## 👤 Author
+
+**fabricioguidine**
+
+- GitHub: [@fabricioguidine](https://github.com/fabricioguidine)
+
 ## 📞 Contact
 
 For questions or suggestions, please open an issue on GitHub.
 
 ---
 
-**Made with ❤️ for the Java community**
+**Made with ❤️ by [fabricioguidine](https://github.com/fabricioguidine) for the Java community**
 

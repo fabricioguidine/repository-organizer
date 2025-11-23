@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+         http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    
+    <groupId>com.designpatterns</groupId>
+    <artifactId>design-patterns-collection</artifactId>
+    <version>1.0.0</version>
+    <packaging>pom</packaging>
+    
+    <name>Design Patterns Collection</name>
+    <description>
+        A comprehensive collection of 23 GoF (Gang of Four) design patterns 
+        implemented in Java with complete test coverage and documentation.
+    </description>
+    
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+        <junit.version>5.9.2</junit.version>
+        <maven.compiler.plugin.version>3.11.0</maven.compiler.plugin.version>
+        <maven.surefire.plugin.version>3.0.0</maven.surefire.plugin.version>
+    </properties>
+    
+    <modules>
+        <!-- Creational Patterns -->
+        <module>design-patterns/abstractFactory</module>
+        <module>design-patterns/builder</module>
+        <module>design-patterns/factoryMethod</module>
+        <module>design-patterns/prototype</module>
+        <module>design-patterns/singleton</module>
+        
+        <!-- Structural Patterns -->
+        <module>design-patterns/adapter</module>
+        <module>design-patterns/bridge</module>
+        <module>design-patterns/composite</module>
+        <module>design-patterns/decorator</module>
+        <module>design-patterns/facade</module>
+        <module>design-patterns/flyweight</module>
+        <module>design-patterns/proxy</module>
+        
+        <!-- Behavioral Patterns -->
+        <module>design-patterns/chainOfResponsability</module>
+        <module>design-patterns/command</module>
+        <module>design-patterns/interpreter</module>
+        <module>design-patterns/iterator</module>
+        <module>design-patterns/mediator</module>
+        <module>design-patterns/memento</module>
+        <module>design-patterns/observer</module>
+        <module>design-patterns/state</module>
+        <module>design-patterns/strategy</module>
+        <module>design-patterns/templateMethod</module>
+        <module>design-patterns/visitor</module>
+    </modules>
+    
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter</artifactId>
+                <version>${junit.version}</version>
+                <scope>test</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+    
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>${maven.compiler.plugin.version}</version>
+                    <configuration>
+                        <source>${maven.compiler.source}</source>
+                        <target>${maven.compiler.target}</target>
+                        <encoding>${project.build.sourceEncoding}</encoding>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-surefire-plugin</artifactId>
+                    <version>${maven.surefire.plugin.version}</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+</project>
+

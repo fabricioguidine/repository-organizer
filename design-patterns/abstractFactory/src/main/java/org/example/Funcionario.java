@@ -3,29 +3,29 @@ package org.example;
 /**
  * Employee class that uses the Abstract Factory pattern to create related objects.
  * This class demonstrates how the Abstract Factory pattern allows creating families
- * of related objects (Holerite and Relatorio) without knowing their concrete classes.
+ * of related objects (Payroll and Report) without knowing their concrete classes.
  * 
  * @author Design Patterns Implementation
  * @version 1.0
  */
-public class Funcionario {
+public class Employee {
     
-    private final Holerite holerite;
-    private final Relatorio relatorio;
+    private final Payroll payroll;
+    private final Report report;
     
     /**
-     * Constructs a new Funcionario using the provided factory to create
+     * Constructs a new Employee using the provided factory to create
      * related objects (payroll and report).
      * 
-     * @param fabrica the abstract factory to use for creating objects
-     * @throws IllegalArgumentException if fabrica is null
+     * @param factory the abstract factory to use for creating objects
+     * @throws IllegalArgumentException if factory is null
      */
-    public Funcionario(FabricaAbstrata fabrica) {
-        if (fabrica == null) {
+    public Employee(AbstractFactory factory) {
+        if (factory == null) {
             throw new IllegalArgumentException("Factory cannot be null");
         }
-        this.holerite = fabrica.createHolerite();
-        this.relatorio = fabrica.createRelatorio();
+        this.payroll = factory.createPayroll();
+        this.report = factory.createReport();
     }
     
     /**
@@ -33,8 +33,8 @@ public class Funcionario {
      * 
      * @return a string containing the payroll information
      */
-    public String emitirHolerite() {
-        return this.holerite.emitir();
+    public String generatePayroll() {
+        return this.payroll.generate();
     }
     
     /**
@@ -42,7 +42,7 @@ public class Funcionario {
      * 
      * @return a string containing the report information
      */
-    public String emitirRelatorio() {
-        return this.relatorio.emitir();
+    public String generateReport() {
+        return this.report.generate();
     }
 }

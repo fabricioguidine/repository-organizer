@@ -3,23 +3,29 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
-    <groupId>org.example</groupId>
-    <artifactId>dcc078-chainOfResponsability</artifactId>
-    <version>1.0-SNAPSHOT</version>
-
+    
+    <parent>
+        <groupId>com.designpatterns</groupId>
+        <artifactId>design-patterns-collection</artifactId>
+        <version>1.0.0</version>
+        <relativePath>../../pom.xml</relativePath>
+    </parent>
+    
+    <artifactId>c-h-a-i-n-o-f-r-e-s-p-o-n-s-a-b-i-l-i-t-y</artifactId>
+    <name>Chain of Responsibility Pattern</name>
+    <description>Chain of Responsibility pattern implementation - Passes requests along a chain of handlers</description>
+    
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-
+    
     <dependencies>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-engine</artifactId>
-            <version>5.5.2</version>
+            <artifactId>junit-jupiter</artifactId>
             <scope>test</scope>
         </dependency>
     </dependencies>
-
 </project>

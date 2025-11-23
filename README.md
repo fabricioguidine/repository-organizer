@@ -259,9 +259,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👤 Author
 
-**fabricioguidine**
-
-- GitHub: [@fabricioguidine](https://github.com/fabricioguidine)
+[@fabricioguidine](https://github.com/fabricioguidine)
 
 ## 📞 Contact
 
